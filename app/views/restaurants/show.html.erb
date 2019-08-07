@@ -1,0 +1,8 @@
+<h1><%= @restaurant[:name] %></h1>
+<p>Address: <%= @restaurant[:address] %></p>
+<p>Food_type: <%= @restaurant[:category] %></p>
+<p>Phone: <%= @restaurant[:phone_number] %></p>
+
+<p><%= link_to 'See the reviews', restaurant_reviews_path(@restaurant) %></p>
+<br>
+<p><%= link_to 'Return to the INDEX', restaurants_path %></p>
