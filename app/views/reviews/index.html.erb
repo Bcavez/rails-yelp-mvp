@@ -1,9 +1,0 @@
-<h1>Reviews#index</h1>
-<% @reviews.each do |review| %>
-  <p>Rating: <%= review[:rating] %></p>
-  <p><%= review[:content] %></p>
-<% end %>
-
-<p><%= link_to 'Add a new review', new_restaurant_review_path(@restaurant) %></p>
-<br>
-<p><%= link_to "Return to #{@restaurant[:name]} page", restaurant_path(@restaurant) %></p>
