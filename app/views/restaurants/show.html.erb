@@ -5,4 +5,11 @@
 
 <p><%= link_to 'See the reviews', restaurant_reviews_path(@restaurant) %></p>
 <br>
+<h2>Add a review!</h2>
+<%= simple_form_for [@restaurant, @review] do |f| %>
+  <%= f.input :content %>
+  <%= f.input :rating %>
+  <%= f.submit "add a review", class: "btn btn-primary" %>
+<% end %>
+<br>
 <p><%= link_to 'Return to the INDEX', restaurants_path %></p>
